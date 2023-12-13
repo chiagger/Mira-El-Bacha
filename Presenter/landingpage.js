@@ -45,3 +45,45 @@ contactBtn.addEventListener("click", () => {
     }
 });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Get all grid items
+    const gridItems = document.querySelectorAll('.grid-item');
+
+    // Loop through each grid item
+    gridItems.forEach((item) => {
+        const slideshow = item.querySelector('.slideshow');
+        const images = slideshow.querySelectorAll('img');
+        let currentIndex = 0;
+
+        // Function to show the current image and hide others
+        function showCurrentImage() {
+            images.forEach((image, index) => {
+                if (index === currentIndex) {
+                    image.style.display = 'block';
+                } else {
+                    image.style.display = 'none';
+                }
+            });
+        }
+
+        // Function to switch to the next image
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showCurrentImage();
+        }
+
+        // Function to switch to the previous image
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showCurrentImage();
+        }
+
+        // Set up click event listeners for navigation buttons
+        item.querySelector('.next-btn').addEventListener('click', nextImage);
+        item.querySelector('.prev-btn').addEventListener('click', prevImage);
+
+        // Initial display of images
+        showCurrentImage();
+    });
+});

@@ -27,6 +27,8 @@ header {
 }
 
 
+
+
 .title {
    text-align: center;
 }
@@ -119,6 +121,43 @@ header.active {
 
 
 .sidebar li:hover {
-    color: #d4af37; /* New text color on hover */
+    color: #B7B7A4; /* New text color on hover */
+    font-size: 1.5em;
 }
 
+.sidebar li:active {
+    color: #69695f; /* New text color on hover */
+    font-size: 1.5em;
+}
+
+
+/* Existing styles... */
+
+.grid-item {
+    position: relative; /* Set position relative for absolute positioning of buttons */
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #3333333f;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.grid-item img {
+   height: 241.66px;
+}
