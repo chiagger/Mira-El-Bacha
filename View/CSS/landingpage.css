@@ -7,18 +7,31 @@ body {
 header {
     display: flex;
     align-items: center; /* Vertically center h1 and p within the header */
-    justify-content: space-between; 
+    justify-content: center; 
     text-align: center;
     background-color: #B7B7A4;
     color: #F0EFEB;
     padding: 50px 0;
 }
 
-.left {
-    flex: 1; /* Grow to take available space */
+.dropdownicon {
+    position:absolute;
+    top: 70px;
+    right:30px;
 }
 
-.right {
+.dropdownicon.active {
+    position:absolute;
+    top: 70px;
+    right:300px;
+}
+
+
+.title {
+   text-align: center;
+}
+
+.dropdownicon {
     margin-left: 20px; /* Add some spacing between the content and img */
     margin-right: 30px;
 }
@@ -68,7 +81,7 @@ p {
 }
 
 header.active {
-    margin-right: 280px;
+    /*margin-right: 280px;*/
 }
 
 .sidebar {
