@@ -16,7 +16,6 @@ dropdownIcon.addEventListener('click', () => {
 
 //sidebar redirects
 const homeBtn = document.getElementById("home");
-const aboutBtn = document.getElementById("about");
 const CVBtn = document.getElementById("CV");
 const contactBtn = document.getElementById("contact");
 const currentPage = window.location.pathname;
@@ -27,11 +26,6 @@ homeBtn.addEventListener("click", () => {
     }
 });
 
-aboutBtn.addEventListener("click", () => {
-    if (currentPage !== "/about.html") {
-        window.location.href = "about.html";
-    }
-});
 
 CVBtn.addEventListener("click", () => {
     if (currentPage !== "/CV.html") {
@@ -45,6 +39,7 @@ contactBtn.addEventListener("click", () => {
     }
 });
 });
+
 
 document.addEventListener('DOMContentLoaded', function () {
     // Get all grid items
