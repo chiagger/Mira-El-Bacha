@@ -2,42 +2,42 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Your code here
 
-const dropdownIcon = document.getElementById("dropdown-icon");
-const sidebar = document.querySelector('.sidebar');
-const header = document.querySelector("header");
-const dropdownDiv = document.querySelector(".dropdownicon");
+    const dropdownIcon = document.getElementById("dropdown-icon");
+    const sidebar = document.querySelector('.sidebar');
+    const header = document.querySelector("header");
+    const dropdownDiv = document.querySelector(".dropdownicon");
 
-dropdownIcon.addEventListener('click', () => {
-    sidebar.classList.toggle('active');
-    header.classList.toggle("active");
-    dropdownDiv.classList.toggle("active");
-});
-
-
-//sidebar redirects
-const homeBtn = document.getElementById("home");
-const CVBtn = document.getElementById("CV");
-const contactBtn = document.getElementById("contact");
-const currentPage = window.location.pathname;
-
-homeBtn.addEventListener("click", () => { 
-    if (currentPage !== "/index.html") {
-        window.location.href = "index.html";
-    }
-});
+    dropdownIcon.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+        header.classList.toggle("active");
+        dropdownDiv.classList.toggle("active");
+    });
 
 
-CVBtn.addEventListener("click", () => {
-    if (currentPage !== "/CV.html") {
-        window.location.href = "CV.html";
-    }
-});
+    //sidebar redirects
+    const homeBtn = document.getElementById("home");
+    const CVBtn = document.getElementById("CV");
+    const contactBtn = document.getElementById("contact");
+    const currentPage = window.location.pathname;
 
-contactBtn.addEventListener("click", () => {
-    if (currentPage !== "/contact.html") {
-        window.location.href = "contact.html";
-    }
-});
+    homeBtn.addEventListener("click", () => {
+        if (currentPage !== "/index.html") {
+            window.location.href = "index.html";
+        }
+    });
+
+
+    CVBtn.addEventListener("click", () => {
+        if (currentPage !== "/CV.html") {
+            window.location.href = "CV.html";
+        }
+    });
+
+    contactBtn.addEventListener("click", () => {
+        if (currentPage !== "/contact.html") {
+            window.location.href = "contact.html";
+        }
+    });
 });
 
 
@@ -81,10 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
         item.querySelector('.next-btn').addEventListener('click', nextImage);
         item.querySelector('.prev-btn').addEventListener('click', prevImage);
 
-        // Set up click event listener for grid item
-      //  item.addEventListener('click', () => {
-        //    openPopup(images, currentIndex);
-        //});
+
         item.addEventListener('click', (event) => {
             const rect = item.getBoundingClientRect();
             const offsetX = event.clientX - rect.left; // Horizontal distance from the left of the item
@@ -100,19 +97,53 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
 function openPopup(images, currentIndex) {
     const popup = document.getElementById('popup');
+    const imagesPopup = images;
     const popupImages = popup.querySelectorAll('.slideshow-popup img');
     const popupInfo = popup.querySelector('.popup-info p');
+    const nextBtn = popup.querySelector('.next-btn-popup');
+    const prevBtn = popup.querySelector('.prev-btn-popup');
 
-    popupImages.forEach((image, index) => {
-        image.src = images[index].src;
-    });
+
+
+    let currentPopupIndex = currentIndex;
+
+    function showCurrentPopupImage() {
+        const activePopup = document.querySelector(".active-popup");
+        console.log(imagesPopup)
+        imagesPopup.forEach((image, index) => {
+            if (index === currentPopupIndex) {
+                activePopup.src = image.src;
+                image.style.display = 'block';
+            } else {
+                image.style.display = 'none';
+            }
+        });
+    }
+
+
+    function nextPopupImage() {
+        currentPopupIndex = (currentPopupIndex + 1) % images.length;
+        showCurrentPopupImage();
+    }
+
+    function prevPopupImage() {
+        currentPopupIndex = (currentPopupIndex - 1 + images.length) % images.length;
+        showCurrentPopupImage();
+    }
+
+    nextBtn.addEventListener('click', nextPopupImage);
+    prevBtn.addEventListener('click', prevPopupImage);
+
+    showCurrentPopupImage();
 
     popupInfo.textContent = `This is some information about Image ${currentIndex + 1}.`;
 
     popup.style.display = 'flex';
 }
+
 
 function closePopup() {
     const popup = document.getElementById('popup');
