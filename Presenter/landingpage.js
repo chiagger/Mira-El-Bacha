@@ -1,3 +1,8 @@
+const titles = ["Film1", "film2", "film3", "film4"]
+const credits = ["Jonah", "film2", "film3", "film4"]
+const briefPlot = ["BriefPilot1", "BriefPilot2", "BriefPilot3", "briefPlot4"]
+const workDesc = ["Workdesc1", "Workdesc2", "Workdesc3", "workDesc4"]
+
 
 document.addEventListener('DOMContentLoaded', function () {
     // Your code here
@@ -88,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Check if the click is within the specified range
             if (offsetX > 35 && offsetX < rect.width - 35) {
-                openPopup(images, currentIndex);
+                openPopup(images, currentIndex, index);
             }
         });
 
@@ -98,17 +103,16 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-function openPopup(images, currentIndex) {
+function openPopup(images, currentIndex, gridItemIndex) {
     const popup = document.getElementById('popup');
     const imagesPopup = images;
-    const popupImages = popup.querySelectorAll('.slideshow-popup img');
-    const popupInfo = popup.querySelector('.popup-info p');
     const nextBtn = popup.querySelector('.next-btn-popup');
     const prevBtn = popup.querySelector('.prev-btn-popup');
 
-
-
     let currentPopupIndex = currentIndex;
+
+
+    //let filmNr;
 
     function showCurrentPopupImage() {
         const activePopup = document.querySelector(".active-popup");
@@ -116,10 +120,20 @@ function openPopup(images, currentIndex) {
             if (index === currentPopupIndex) {
                 activePopup.src = image.src;
                 image.style.display = 'block';
+                setImageInfo(gridItemIndex);
             } else {
                 image.style.display = 'none';
             }
         });
+    }
+
+
+    function setImageInfo(gridItemIndex) {
+        const popupInfo = document.querySelector('.popup-info');
+        popupInfo.querySelector('h2').textContent = titles[gridItemIndex];
+        popupInfo.querySelector('h4').textContent = credits[gridItemIndex];
+        popupInfo.querySelectorAll('p')[0].textContent = briefPlot[gridItemIndex];
+        popupInfo.querySelectorAll('p')[1].textContent = workDesc[gridItemIndex];
     }
 
 
@@ -137,8 +151,6 @@ function openPopup(images, currentIndex) {
     prevBtn.addEventListener('click', prevPopupImage);
 
     showCurrentPopupImage();
-
-    popupInfo.textContent = `This is some information about Image ${currentIndex + 1}.`;
 
     popup.style.display = 'flex';
 }

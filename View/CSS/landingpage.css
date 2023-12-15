@@ -201,10 +201,19 @@ header.active {
     display: flex;
     flex-direction: column;
     width: 1200px;
+    
     overflow: hidden;
     background-color: #fff;
     border-radius: 5px;
 }
+
+.active-popup {
+    width: 1200px;
+    height: 692px;
+    
+
+}
+
 
 .prev-btn-popup,
 .next-btn-popup {
@@ -251,3 +260,20 @@ header.active {
 }
 
 
+.slideshow-popup {
+    width: 1200px; /* Set the width of the slideshow-popup */
+    height: 600px; /* Set the height of the slideshow-popup */
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+  }
+
+  .slideshow-popup img {
+    width: 100%; /* Make the image fill the width of the container */
+    height: 100%; /* Make the image fill the height of the container */
+    object-fit: cover; /* Maintain the image's aspect ratio and cover the entire container */
+    object-position: center; /* Center the image within the container */
+  }
+
+  .popup-info {
+    margin-top: -55px;
+    text-align: center;
+}
