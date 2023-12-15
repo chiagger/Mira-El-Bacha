@@ -424,6 +424,7 @@ p {
 
     h2 {
         margin-top: 1rem;
+        visibility: visible;
         /* Adjust margin for better spacing on small screens */
     }
 
