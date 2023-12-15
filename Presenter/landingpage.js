@@ -112,7 +112,6 @@ function openPopup(images, currentIndex) {
 
     function showCurrentPopupImage() {
         const activePopup = document.querySelector(".active-popup");
-        console.log(imagesPopup)
         imagesPopup.forEach((image, index) => {
             if (index === currentPopupIndex) {
                 activePopup.src = image.src;

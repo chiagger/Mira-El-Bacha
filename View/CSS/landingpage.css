@@ -200,9 +200,7 @@ header.active {
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
-    width: 80%;
-    max-height: 80%;
+    width: 1200px;
     overflow: hidden;
     background-color: #fff;
     border-radius: 5px;
