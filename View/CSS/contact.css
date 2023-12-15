@@ -210,3 +210,63 @@ header.active {
     width:48px;
 }
 
+
+@media only screen and (max-width: 767px) {
+    header {
+        padding: 20px 10px; /* Adjust padding for better spacing on small screens */
+    }
+
+    .dropdownicon {
+        top: 10px; /* Adjust the top position for better spacing on small screens */
+        right: 10px; /* Adjust the right position for better spacing on small screens */
+        width: 10px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .bio {padding: 10px;
+    font-size: 0.8em;}
+
+    h1 {
+        font-size: 20px; /* Adjust font size for better readability on small screens */
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px; /* Adjust font size for better readability on small screens */
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+
+    .bio {
+        width: 100%; /* Make the bio responsive to the width of the screen */
+    }
+
+    .container {
+        padding: 10px; /* Adjust padding for better spacing on small screens */
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust minmax values for better responsiveness */
+        gap: 10px;
+    }
+
+    .grid-item img, .grid-item video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    h2 {
+        margin-top: 1rem; /* Adjust margin for better spacing on small screens */
+    }
+
+    /* Add more responsive styles as needed */
+}
