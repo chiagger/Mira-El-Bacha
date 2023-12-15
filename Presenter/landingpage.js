@@ -41,20 +41,23 @@ contactBtn.addEventListener("click", () => {
 });
 
 
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // Get all grid items
     const gridItems = document.querySelectorAll('.grid-item');
 
     // Loop through each grid item
-    gridItems.forEach((item) => {
+    gridItems.forEach((item, index) => {
         const slideshow = item.querySelector('.slideshow');
         const images = slideshow.querySelectorAll('img');
         let currentIndex = 0;
 
         // Function to show the current image and hide others
         function showCurrentImage() {
-            images.forEach((image, index) => {
-                if (index === currentIndex) {
+            images.forEach((image, i) => {
+                if (i === currentIndex) {
                     image.style.display = 'block';
                 } else {
                     image.style.display = 'none';
@@ -78,7 +81,40 @@ document.addEventListener('DOMContentLoaded', function () {
         item.querySelector('.next-btn').addEventListener('click', nextImage);
         item.querySelector('.prev-btn').addEventListener('click', prevImage);
 
+        // Set up click event listener for grid item
+      //  item.addEventListener('click', () => {
+        //    openPopup(images, currentIndex);
+        //});
+        item.addEventListener('click', (event) => {
+            const rect = item.getBoundingClientRect();
+            const offsetX = event.clientX - rect.left; // Horizontal distance from the left of the item
+
+            // Check if the click is within the specified range
+            if (offsetX > 35 && offsetX < rect.width - 35) {
+                openPopup(images, currentIndex);
+            }
+        });
+
         // Initial display of images
         showCurrentImage();
     });
 });
+
+function openPopup(images, currentIndex) {
+    const popup = document.getElementById('popup');
+    const popupImages = popup.querySelectorAll('.slideshow-popup img');
+    const popupInfo = popup.querySelector('.popup-info p');
+
+    popupImages.forEach((image, index) => {
+        image.src = images[index].src;
+    });
+
+    popupInfo.textContent = `This is some information about Image ${currentIndex + 1}.`;
+
+    popup.style.display = 'flex';
+}
+
+function closePopup() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'none';
+}
