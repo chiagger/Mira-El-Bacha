@@ -268,5 +268,43 @@ header.active {
         margin-top: 1rem; /* Adjust margin for better spacing on small screens */
     }
 
+
+    .social-media-list {
+        margin-top: -5px;
+    }
+
+    .dropdownicon {
+        position: absolute;
+        top: 20px;
+        /* Adjust the top position for better spacing on small screens */
+        right: 10px;
+        /* Adjust the right position for better spacing on small screens */
+    }
+
+    .dropdownicon.active {
+        top:20px;
+    }
+
+
+    #dropdown-icon {
+        width: 40px;
+    }
     /* Add more responsive styles as needed */
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+
+    .container {
+        display: flex;
+    }
+
+    .contact-section h2 {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .social-media-list {
+        margin-top: -10px;
+    }
+
 }
