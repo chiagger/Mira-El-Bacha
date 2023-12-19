@@ -1,5 +1,5 @@
-const titles = ["Film1", "film2", "film3", "film4"]
-const credits = ["Jonah", "film2", "film3", "film4"]
+const titles = ["Datura Daydreams", "film2", "film3", "film4"]
+const credits = ["directed by Jonah Garrett-Bannister", "film2", "film3", "film4"]
 const briefPlot = ["BriefPilot1", "BriefPilot2", "BriefPilot3", "briefPlot4"]
 
 
