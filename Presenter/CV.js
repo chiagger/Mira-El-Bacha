@@ -32,9 +32,10 @@ appendWorkExperience(column1, "1st Assistant Director", "Datura Daydream | ","20
 appendWorkExperience(column1,"1st Assistant Director", "The Morning After | ","2022", "Short film production with Roundhouse.");
 appendWorkExperience(column1,"1st Assistant Director", "Rise Like Water | ","2021", "Short film production.");
 appendWorkExperience(column1,"1st Assistant Director", "Fragile | ","2021", "Short film production.");
+appendWorkExperience(column1, "_________________________________________________________________","","","");
 appendWorkExperience(column1,"Production Assistant", "This Person Does Not Exist | ","2022", "Short film production.");
 appendWorkExperience(column1,"Documentary Film Maker", "Il sole in cantina | ","2019", "Production of a short documentary about music and history. Production of a series of interviews.");
-appendWorkExperience(column2,"Film Festival Organiser", "Some Prefer Cake and Genderbender | ","2014 - 2020", "Administrative work to put the festival together, from getting more volunteers to helping choose the films to be screened.");
+appendWorkExperience(column1,"Film Festival Organiser", "Some Prefer Cake and Genderbender | ","2014 - 2020", "Administrative work to put the festival together, from getting more volunteers to helping choose the films to be screened.");
 appendWorkExperience(column2,"Film Tutor", "Mediateca di San Lazzaro | ","2019", "Tutor younger people in making a short video.");
 appendWorkExperience(column2,"Events Organiser", "Cassero LGBT Center | ","2015 - 2020", "Coordinated a team to organise events and awareness campaigns. Did a lot of team-building.");
 appendWorkExperience(column2,"Internship TV", "Twofour54 | ","2018", "Internship in television where I rehearsed every role in a live news programme.");
