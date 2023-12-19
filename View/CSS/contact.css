@@ -308,3 +308,20 @@ header.active {
     }
 
 }
+
+@media only screen and (min-width: 767px) and (max-width: 932px) and (orientation: landscape) {
+
+    .container {
+        display: flex;
+    }
+
+    .contact-section h2 {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .social-media-list {
+        margin-top: -10px;
+    }
+}
+    
