@@ -223,6 +223,15 @@ header {
     display: flex;
     gap: 50px;
 }
+
+.column1 {
+    width: 50%;
+}
+
+.column2 {
+    width: 50%;
+}
+
 @media only screen and (max-width: 767px) {
 
     body {
