@@ -18,6 +18,7 @@ header {
     padding: 50px 0;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 
@@ -32,9 +33,6 @@ header {
     top: 70px;
     right: 300px;
 }
-
-
-
 
 .title {
     text-align: center;
@@ -56,15 +54,7 @@ p {
     color: #1B1B1B;
 }
 
-.bio {
-    margin-top: 10px;
-    width: 740px;
-    text-align: center;
-    gap: 6px;
-    font-size: 1em;
-    margin: 0 auto;
-    /* Add this line to center the bio */
-}
+
 
 
 .grid-item img {
@@ -73,10 +63,31 @@ p {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 230px 20px 20px; /* Adjust the top padding value as needed */
+    padding: 230px 20px 20px;
+    /* Adjust the top padding value as needed */
     background-color: #F0EFEB;
+    display: flex;
+
+}
+
+.bio {
+    width: 40%;
+    max-width: 400px;
+    text-align: left;
+    gap: 6px;
+    font-size: 1.2em;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-left: 50px;
+    /* Add this line to center the bio */
+}
+
+.portfolio {
+    width: 60%;
+    padding: 100px;
+    padding-top: 0;
 }
 
 .grid {
@@ -122,6 +133,8 @@ p {
     padding: 20px;
     transition: right 0.3s;
     /* Add smooth transition effect */
+    z-index: 1;
+
 
 }
 
@@ -305,27 +318,35 @@ p {
 
 /* Responsive styles for phones */
 @media only screen and (max-width: 767px) {
+
+    body {
+        width: 100vw;
+    }
+
     header {
-        padding: 20px 10px;
+        padding: 10px 5px;
         /* Adjust padding for better spacing on small screens */
     }
 
     .dropdownicon {
         position: absolute;
-        top: 10px;
+        top: 20px;
         /* Adjust the top position for better spacing on small screens */
         right: -15px;
         /* Adjust the right position for better spacing on small screens */
-
     }
 
-    
+
+    #dropdown-icon {
+        width: 40px;
+    }
+
     .dropdownicon.active {
         position: absolute;
-        top: 10px;
+        top: 20px;
         right: 275px;
     }
-    
+
 
     .title {
         text-align: center;
@@ -337,7 +358,7 @@ p {
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 30px;
         /* Adjust font size for better readability on small screens */
     }
 
@@ -345,7 +366,7 @@ p {
         font-size: 20px;
     }
 
-   
+
 
     .grid {
         display: flex;
@@ -363,10 +384,7 @@ p {
         /* Adjust font size for better readability on small screens */
     }
 
-    .bio {
-        width: 90%;
-        /* Make the bio responsive to the width of the screen */
-    }
+
 
 
     .popup {
@@ -376,25 +394,16 @@ p {
 
     .slideshow-popup {
         width: 100%;
-        /* Set the width of the slideshow-popup */
         height: 100%;
-        /* Set the height of the slideshow-popup */
         overflow: hidden;
-        /* Ensure the image doesn't overflow the container */
     }
-
 
     .slideshow-popup img {
         width: 100%;
-        /* Make the image fill the width of the container */
         max-width: 100%;
-        /* Set a maximum width for the image on small screens */
         height: auto;
-        /* Automatically adjust height to maintain aspect ratio */
         object-fit: cover;
-        /* Maintain the image's aspect ratio and cover the entire container */
         object-position: center;
-        /* Center the image within the container */
     }
 
     .popup-info {
@@ -402,11 +411,13 @@ p {
     }
 
     header {
-        padding: 20px 10px; /* Adjust padding for better spacing on small screens */
+        padding: 20px 10px;
+        /* Adjust padding for better spacing on small screens */
     }
 
     .container {
-        padding: 110px 10px 10px; /* Adjust the top padding value for mobile */
+        padding: 125px 10px 10px;
+        /* Adjust the top padding value for mobile */
     }
 
     .grid {
@@ -424,6 +435,7 @@ p {
 
     h2 {
         margin-top: 1rem;
+        visibility: visible;
         /* Adjust margin for better spacing on small screens */
     }
 
@@ -447,5 +459,328 @@ p {
         cursor: pointer;
     }
 
-    /* Add more responsive styles as needed */
+
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0px 20px 20px;
+        /* Adjust the top padding value as needed */
+        background-color: #F0EFEB;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .bio {
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        font-size: 0.8em;
+        margin: 0 auto;
+        margin-top: 150px;
+        /* Add this line to center the bio */
+    }
+
+    .portfolio {
+        width: 100%;
+        padding: 0;
+    }
+
+
+}
+
+/* Responsive styles for landscape orientation on phones */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    header {
+        z-index: 1;
+        height: 15%;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        margin-top: 15px;
+    }
+
+    .sidebar {
+        z-index: 1;
+    }
+
+    .container {
+        padding: 0px 10px 10px;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bio {
+        width: 30%;
+        max-width: 150px;
+        text-align: left;
+        padding: 0;
+        margin-top: 150px;
+        font-size: 0.8em;
+    }
+
+    .portfolio {
+        width: 70%;
+        margin-top: 100px;
+    }
+
+    .grid {
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .popup {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .popup-content {
+        width: 60%;
+        max-height: 100%;
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .popup-info {
+        height: 60px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
+    .popup-info h2 {
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+    .popup-info h4 {
+        font-size: 0.9em;
+        margin: 0;
+    }
+
+    .popup-info p {
+        margin: 0;
+        font-size: 0.8em;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 15px;
+        color: #fff;
+        background-color: #00000059;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 1;
+    }
+}
+
+
+
+@media only screen and (min-width: 767px) and (max-width: 932px) and (orientation: landscape) {
+    header {
+        z-index: 1;
+        height: 3%;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        margin-top: 15px;
+    }
+
+    .sidebar {
+        z-index: 1;
+    }
+
+    .container {
+        padding: 0px 10px 10px;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dropdownicon {
+        top: 30px;
+        right: 0px;
+    }
+
+    .dropdownicon.active {
+        top: 30px;
+        right: 260px;
+    }
+
+
+    .bio {
+        width: 40%;
+        max-width: 300px;
+        text-align: left;
+        padding: 0;
+        margin-top: 150px;
+        font-size: 0.8em;
+    }
+
+    .portfolio {
+        width: 60%;
+        margin-top: 70px;
+    }
+
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .popup {
+        width: 100%;
+        height: 100%;
+    }
+
+    .popup-content {
+        width: 60%;
+        max-height: 100%;
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .popup-info {
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .popup-info h2 {
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+    .popup-info h4 {
+        font-size: 0.9em;
+        margin: 0;
+    }
+
+    .popup-info p {
+        margin: 0;
+        font-size: 0.8em;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 15px;
+        color: #fff;
+        background-color: #00000059;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .popup-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+
+
+    .prev-btn-popup,
+    .next-btn-popup {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #3333333f;
+        color: #fff;
+        font-size: 24px;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .prev-btn-popup {
+        left: 0;
+    }
+
+    .next-btn-popup {
+        right: 0;
+    }
+
+    .slideshow-popup {
+        position: relative;
+    }
+
+
+
+    .slideshow-popup {
+        width: 500px;
+        /* Set the width of the slideshow-popup */
+        height: 300px;
+        /* Set the height of the slideshow-popup */
+        overflow: hidden;
+        /* Ensure the image doesn't overflow the container */
+    }
+
+    .slideshow-popup img {
+        width: 100%;
+        /* Make the image fill the width of the container */
+        height: 100%;
+        /* Make the image fill the height of the container */
+        object-fit: cover;
+        /* Maintain the image's aspect ratio and cover the entire container */
+        object-position: center;
+        /* Center the image within the container */
+    }
+
+    .popup-info {
+        text-align: center;
+        margin-top: 0px;
+        overflow-y: scroll;
+    }
+
 }

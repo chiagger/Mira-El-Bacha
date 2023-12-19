@@ -1,7 +1,6 @@
 const titles = ["Film1", "film2", "film3", "film4"]
 const credits = ["Jonah", "film2", "film3", "film4"]
 const briefPlot = ["BriefPilot1", "BriefPilot2", "BriefPilot3", "briefPlot4"]
-const workDesc = ["Workdesc1", "Workdesc2", "Workdesc3", "workDesc4"]
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -133,7 +132,6 @@ function openPopup(images, currentIndex, gridItemIndex) {
         popupInfo.querySelector('h2').textContent = titles[gridItemIndex];
         popupInfo.querySelector('h4').textContent = credits[gridItemIndex];
         popupInfo.querySelectorAll('p')[0].textContent = briefPlot[gridItemIndex];
-        popupInfo.querySelectorAll('p')[1].textContent = workDesc[gridItemIndex];
     }
 
 
