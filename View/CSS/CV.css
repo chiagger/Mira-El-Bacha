@@ -218,6 +218,10 @@ header {
     text-align: left;
 }
 
+.work-experience {
+    display: flex;
+    gap: 50px;
+}
 @media only screen and (max-width: 767px) {
 
     body {
