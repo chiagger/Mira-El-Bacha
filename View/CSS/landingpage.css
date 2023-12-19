@@ -84,6 +84,10 @@ p {
     /* Add this line to center the bio */
 }
 
+.bio p {
+    text-align: left;
+}
+
 .portfolio {
     width: 60%;
     padding: 100px;
