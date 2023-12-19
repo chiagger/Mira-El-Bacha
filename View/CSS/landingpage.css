@@ -73,13 +73,13 @@ p {
 }
 
 .bio {
-    width: 40%;
-    max-width: 400px;
+    width: 45%;
+    max-width: 450px;
     text-align: left;
     gap: 6px;
     font-size: 1.2em;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 40px;
     margin-left: 100px;
     /* Add this line to center the bio */
 }
@@ -89,7 +89,7 @@ p {
 }
 
 .portfolio {
-    width: 60%;
+    width: 55%;
     padding: 100px;
     padding-top: 0;
 }
