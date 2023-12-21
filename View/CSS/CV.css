@@ -161,7 +161,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: 66.5vh;
+    height: 90vh;
     padding: 100px;
     margin-left: -40px;
     justify-content: flex-start;
@@ -201,7 +201,7 @@ header {
     padding: 100px;
     margin-left: 50px;
     padding-top: 30px;
-    height: 73.3vh;
+    height: 90vh;
     overflow-y: scroll;
 }
 
