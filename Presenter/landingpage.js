@@ -1,5 +1,5 @@
 const titles = ["Datura Daydreams", "Rise Like Water", "Morning After", "Fragile"]
-const credits = ["directed by Jonah Garrett-Bannister", "directed by Jonah Garrett-Bannister", "directed by Saoirse D. Byrne", "film4"]
+const credits = ["directed by Jonah Garrett-Bannister", "directed by Jonah Garrett-Bannister", "directed by Saoirse D. Byrne", "directed by Laura Esteban"]
 const briefPlot = ["BriefPilot1", "BriefPilot2", "BriefPilot3", "briefPlot4"]
 
 
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const offsetX = event.clientX - rect.left; // Horizontal distance from the left of the item
 
             // Check if the click is within the specified range
-            if (offsetX > 35 && offsetX < rect.width - 35) {
+            if (offsetX > 10 && offsetX < rect.width - 10) {
                 openPopup(images, currentIndex, index);
             }
         });

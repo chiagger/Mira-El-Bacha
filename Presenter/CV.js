@@ -28,11 +28,12 @@ function appendWorkExperience(column, jobTitle, employer, date, description) {
    
 }
 
-
-appendWorkExperience(topExperience, "1st Assistant Director", "Datura Daydream | ","2022", "Short film production.");
-appendWorkExperience(topExperience,"1st Assistant Director", "The Morning After | ","2022", "Short film production with Roundhouse.");
-appendWorkExperience(topExperience,"1st Assistant Director", "Rise Like Water | ","2021", "Short film production.");
-appendWorkExperience(topExperience,"1st Assistant Director", "Fragile | ","2021", "Short film production.");
+appendWorkExperience(topExperience, "1st Assistant Director", "You Won't Help Me | ","2023 - 2024", "");
+appendWorkExperience(topExperience, "2nd Assistant Director", "Nuovo Film | ","2024", "");
+appendWorkExperience(topExperience, "1st Assistant Director", "Datura Daydream | ","2022", "");
+appendWorkExperience(topExperience,"1st Assistant Director", "The Morning After | ","2022", "");
+appendWorkExperience(topExperience,"1st Assistant Director", "Rise Like Water | ","2021", "");
+appendWorkExperience(topExperience,"1st Assistant Director", "Fragile | ","2021", "");
 //appendWorkExperience(column1, "____________________________________________","","","");
 
 appendWorkExperience(column1,"Production Assistant", "This Person Does Not Exist | ","2022", "Short film production.");
