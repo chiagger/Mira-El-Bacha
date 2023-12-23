@@ -1,35 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
+/**FOR PC**/
+
+/**structure**/
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
     height: 100%;
+    width: 100%;
     zoom: 67%;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F0EFEB;
+    /**fixed for windows...**/
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F0EFEB;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    /* Vertically center h1 and p within the header */
-    justify-content: center;
-    text-align: center;
+    height: 10%;
+    width: 100%;
+    padding: 50px 0;
+    z-index: 1;
     background-color: #B7B7A4;
     color: #F0EFEB;
-    padding: 50px 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    height: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 50px 50px;
+    background-color: #f0efeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio {
+    height: 100%;
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    border-radius: 25px;
+    background-color: #e4e4de;
+    box-shadow: 6px 4px 16px 0px rgba(0, 0, 0, 0.38);
+
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.portfolio {
+    height: 100%;
+    width: 55%;
+    padding: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 
+
+
+
+
+
+/**header**/
 .dropdownicon {
     position: absolute;
+    margin-right: 50px;
     top: 70px;
     right: 30px;
 }
@@ -40,15 +89,14 @@ header {
     right: 300px;
 }
 
-.title {
-    text-align: center;
-}
 
-.dropdownicon {
-    /* Add some spacing between the content and img */
-    margin-right: 50px;
-}
 
+
+
+
+
+
+/**styling**/
 h1 {
     font-size: 36px;
     margin: 0;
@@ -60,69 +108,8 @@ p {
     color: #1B1B1B;
 }
 
-
-
-
-.grid-item img {
-    transition: opacity 0.5s ease-in-out;
-    /* Adjust the duration and timing function as needed */
-}
-
-.container {
-    height: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 230px 20px 20px;
-    /* Adjust the top padding value as needed */
-    background-color: #f0efeb;
-    display: flex;
-
-}
-
-.bio {
-    width: 45%;
-    max-width: 450px;
-    text-align: left;
-    gap: 6px;
-    font-size: 1.2em;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-left: 100px;
-    background-color: #e4e4de;
-    border-radius: 50px;
-    padding: 50px;
-    margin-left: 0px;
-    /* Add this line to center the bio */
-}
-
 .bio p {
     text-align: left;
-}
-
-.portfolio {
-    width: 55%;
-    padding: 100px;
-    padding-top: 0;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.grid-item {
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.grid-item img,
-.grid-item video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 h2 {
@@ -136,63 +123,36 @@ p {
 }
 
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: -400px;
-    /* Initially hidden */
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    transition: right 0.3s;
-    /* Add smooth transition effect */
-    z-index: 1;
 
 
+
+
+
+/**grid**/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
-
-.sidebar.active {
-    right: 0;
-    /* Display the sidebar */
-}
-
-.sidebar ul {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    list-style: none;
-    padding: 0;
-    margin-top: 30vh;
-}
-
-.sidebar li {
-    margin: 10px 0;
-    text-decoration: none;
-    color: #F0EFEB;
-    font-size: 20px;
-}
-
-
-.sidebar li:hover {
-    color: #B7B7A4;
-    /* New text color on hover */
-    font-size: 1.5em;
-}
-
-.sidebar li:active {
-    color: #69695f;
-    /* New text color on hover */
-    font-size: 1.5em;
-}
-
-
-/* Existing styles... */
 
 .grid-item {
     position: relative;
-    /* Set position relative for absolute positioning of buttons */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grid-item img,
+.grid-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-item img {
+    transition: opacity 0.5s ease-in-out;
+    height: 241.66px;
 }
 
 .prev-btn,
@@ -216,14 +176,73 @@ p {
     right: 0;
 }
 
-.grid-item img {
-    height: 241.66px;
+
+
+
+
+
+
+
+
+/**sidebar**/
+.sidebar {
+    height: 100%;
+    width: 13.5%;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    /* Initially hidden */
+    padding: 20px;
+    transition: right 0.3s;
+    z-index: 1;
+
+    background-color: #333;
+    color: #fff;
+}
+
+.sidebar.active {
+    right: 0;
+    /* Display the sidebar */
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin-top: 50vh;
+}
+
+.sidebar li {
+    margin: 10px 0;
+    text-decoration: none;
+    color: #F0EFEB;
+    font-size: 20px;
+}
+
+.sidebar li:hover {
+    color: #B7B7A4;
+    font-size: 1.5em;
+}
+
+.sidebar li:active {
+    color: #69695f;
+    font-size: 1.5em;
 }
 
 
 
-/* Add this to your existing CSS file */
 
+
+
+
+
+
+
+
+
+/** popup **/
 .popup {
     display: none;
     position: fixed;
@@ -242,19 +261,10 @@ p {
     display: flex;
     flex-direction: column;
     width: 1200px;
-
     overflow: hidden;
     background-color: #fff;
     border-radius: 5px;
 }
-
-.active-popup {
-    width: 1200px;
-    height: 692px;
-
-
-}
-
 
 .prev-btn-popup,
 .next-btn-popup {
@@ -281,10 +291,6 @@ p {
     position: relative;
 }
 
-.popup-info {
-    padding: 20px;
-}
-
 .close-btn {
     position: absolute;
     top: 40px;
@@ -300,111 +306,97 @@ p {
     cursor: pointer;
 }
 
-
 .slideshow-popup {
     width: 1200px;
-    /* Set the width of the slideshow-popup */
     height: 600px;
-    /* Set the height of the slideshow-popup */
     overflow: hidden;
-    /* Ensure the image doesn't overflow the container */
 }
 
 .slideshow-popup img {
     width: 100%;
-    /* Make the image fill the width of the container */
     height: 100%;
-    /* Make the image fill the height of the container */
     object-fit: cover;
-    /* Maintain the image's aspect ratio and cover the entire container */
     object-position: center;
-    /* Center the image within the container */
 }
 
 .popup-info {
+    padding: 20px;
     margin-top: -55px;
     text-align: center;
 }
 
 
-/* Existing styles for PC... */
 
-/* Add this to your existing CSS file */
 
-/* Responsive styles for phones */
-@media only screen and (max-width: 767px) {
 
-    body {
-        width: 100vw;
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 430px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
     }
 
     header {
-        padding: 10px 5px;
-        /* Adjust padding for better spacing on small screens */
+        padding-bottom: 30px;
+        padding-top: 30px;
     }
 
-    .dropdownicon {
-        position: absolute;
-        top: 20px;
-        /* Adjust the top position for better spacing on small screens */
-        right: -15px;
-        /* Adjust the right position for better spacing on small screens */
+    h1 {
+        font-size: 2.1em;
     }
 
+    .bio {
+        font-size: 0.8em;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+
+    }
+
+    .portfolio {
+        margin-top: -25px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 30%;
+    }
 
     #dropdown-icon {
         width: 40px;
     }
 
-    .dropdownicon.active {
+    .dropdownicon {
+        width: fit-content;
+        padding: 5px;
         position: absolute;
-        top: 20px;
-        right: 275px;
+        top: 50px;
+        right: -15px;
     }
 
-
-    .title {
-        text-align: center;
+    .dropdownicon.active {
+        background-color: #f0efebde;
+        border-radius: 50px;
+        position: absolute;
+        top: 50px;
+        right: 170px;
     }
-
-    .bio {
-        padding: 10px;
-        font-size: 0.8em;
-    }
-
-    h1 {
-        font-size: 30px;
-        /* Adjust font size for better readability on small screens */
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-
-
-    .grid {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .grid-item {
-        width: 70%;
-    }
-
-    p {
-        font-size: 14px;
-        /* Adjust font size for better readability on small screens */
-    }
-
-
 
 
     .popup {
         width: 100%;
-
     }
 
     .slideshow-popup {
@@ -421,90 +413,13 @@ p {
         object-position: center;
     }
 
-    .popup-info {
-        margin-top: -10px;
-    }
-
-    header {
-        padding: 20px 10px;
-        /* Adjust padding for better spacing on small screens */
-    }
-
-    .container {
-        padding: 125px 10px 10px;
-        /* Adjust the top padding value for mobile */
-    }
-
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        /* Adjust minmax values for better 7responsiveness */
-        gap: 10px;
-    }
-
-    .grid-item img,
-    .grid-item video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    h2 {
-        margin-top: 1rem;
-        visibility: visible;
-        /* Adjust margin for better spacing on small screens */
-    }
-
-    .grid-item img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .close-btn {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        font-size: 15px;
-        color: #fff;
-        background-color: #00000059;
-        width: 20px;
-        height: 20px;
-        line-height: 20px;
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-
-    .container {
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0px 20px 20px;
-        /* Adjust the top padding value as needed */
-        background-color: #F0EFEB;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .bio {
-        width: 100%;
-        max-width: 400px;
-        text-align: center;
-        font-size: 0.8em;
-        margin: 0 auto;
-        margin-top: 150px;
-        /* Add this line to center the bio */
-    }
-
-    .portfolio {
-        width: 100%;
-        padding: 0;
-    }
-
-
 }
 
-/* Responsive styles for landscape orientation on phones */
+
+
+
+
+/**FOR SMALL PHONES HORIZONTAL**/
 @media only screen and (max-width: 767px) and (orientation: landscape) {
     header {
         z-index: 1;

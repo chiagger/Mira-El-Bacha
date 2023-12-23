@@ -80,16 +80,21 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Set up click event listeners for navigation buttons
-        item.querySelector('.next-btn').addEventListener('click', nextImage);
-        item.querySelector('.prev-btn').addEventListener('click', prevImage);
+        item.querySelector('.next-btn').addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevent the click from reaching the grid item
+            nextImage();
+        });
 
+        item.querySelector('.prev-btn').addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevent the click from reaching the grid item
+            prevImage();
+        });
 
         item.addEventListener('click', (event) => {
-            const rect = item.getBoundingClientRect();
-            const offsetX = event.clientX - rect.left; // Horizontal distance from the left of the item
-
-            // Check if the click is within the specified range
-            if (offsetX > 10 && offsetX < rect.width - 10) {
+            // Check if the click was on the navigation buttons
+            const isNavButtonClick = event.target.classList.contains('next-btn') || event.target.classList.contains('prev-btn');
+            
+            if (!isNavButtonClick) {
                 openPopup(images, currentIndex, index);
             }
         });
@@ -98,6 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
         showCurrentImage();
     });
 });
+
 
 
 function openPopup(images, currentIndex, gridItemIndex) {
