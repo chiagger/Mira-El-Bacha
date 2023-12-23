@@ -78,7 +78,7 @@ header {
 /**header**/
 .dropdownicon {
     position: absolute;
-    margin-right: 50px;
+    margin-right: 20px;
     top: 70px;
     right: 30px;
 }
@@ -86,7 +86,11 @@ header {
 .dropdownicon.active {
     position: absolute;
     top: 70px;
-    right: 300px;
+    right:  16%;
+    background-color: #f0efebde;
+    border-radius: 50px;
+    padding: 10px;
+    padding-bottom: 5px;
 }
 
 
@@ -337,8 +341,8 @@ p {
 
 
 
-
-@media only screen and (max-width: 430px) {
+/**FOR PHONES VERTICAL**/
+@media only screen and (max-width: 800px) {
     .container {
         display: flex;
         flex-direction: column-reverse;
@@ -383,7 +387,7 @@ p {
         padding: 5px;
         position: absolute;
         top: 50px;
-        right: -15px;
+        right: 15px;
     }
 
     .dropdownicon.active {
@@ -391,7 +395,7 @@ p {
         border-radius: 50px;
         position: absolute;
         top: 50px;
-        right: 170px;
+        right: 35%;
     }
 
 
@@ -415,12 +419,18 @@ p {
 
 }
 
+/**SURFACE PRO7**/
+@media only screen and (min-width: 801px) and (max-width: 950px) {
+    .sidebar.active {
+        width: 20%;
+    }
+}
 
 
 
 
-/**FOR SMALL PHONES HORIZONTAL**/
-@media only screen and (max-width: 767px) and (orientation: landscape) {
+/**FOR PHONES HORIZONTAL**/
+@media only screen and (max-width: 800px) and (orientation: landscape) {
     header {
         z-index: 1;
         height: 15%;
