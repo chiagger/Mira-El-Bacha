@@ -541,7 +541,7 @@ h2 {
     }
 
     .left {
-        overflow-y: hidden;
+        overflow-y: scroll;
         font-size: 1em;
         width: 100%;
         height: 30%;
@@ -687,7 +687,7 @@ h2 {
 @media only screen and (max-width:1180px) and (orientation: landscape) {
     .left {
         margin-top: 0;
-        overflow-y: hidden;
+        overflow-y: scroll;
         margin-left: 3%;
     }
 
@@ -716,8 +716,9 @@ h2 {
         width: 40%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        overflow-y: scroll;
     }
 
     .skills {
