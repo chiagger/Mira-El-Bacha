@@ -682,6 +682,33 @@ h2 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**PHONES HORIZONTAL**/
 
 @media only screen and (max-width:1180px) and (orientation: landscape) {
@@ -699,6 +726,7 @@ h2 {
     header {
         padding-top: 5%;
         padding-bottom: 5%;
+        
     }
 
     .container {
