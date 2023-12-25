@@ -464,10 +464,7 @@ p {
     }
  }
 
- 
-
-/**BIGGER PHONES HORIZONTAL**/
-@media only screen and (min-width:668px) and (max-width: 932px) and (orientation: landscape) {
+ @media only screen and (min-width:668px) and (max-width: 932px) and (orientation: landscape) {
     .popup-content {
         width: 800px;
         height: 550px;

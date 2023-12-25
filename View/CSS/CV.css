@@ -541,6 +541,7 @@ h2 {
     }
 
     .left {
+        overflow-y: hidden;
         font-size: 1em;
         width: 100%;
         height: 30%;
@@ -680,14 +681,192 @@ h2 {
 }
 
 
+
+/**PHONES HORIZONTAL**/
+
+@media only screen and (max-width:1180px) and (orientation: landscape) {
+    .left {
+        margin-top: 0;
+        overflow-y: hidden;
+        margin-left: 3%;
+    }
+
+    
+}
+
+@media only screen and (max-width: 667px) and (orientation: landscape) {
+
+    header {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .left {
+        height: 70%;
+        margin-top: 3%;
+        padding-left: 3%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills {
+        margin-top: 5%;
+    }
+
+    .right {
+        padding-top: 0;
+        height: 70%;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-height: 360px) and (orientation: landscape) {
+
+    .left {
+        margin-top: 0;
+        padding: 10px;
+        margin-left: 20px;
+        height: 70%;
+        font-size: 1em;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #f0efeb;
+
+    }
+}
+
+@media only screen and (max-height: 280px) and (orientation: landscape) {
+    
+    header {
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .left {
+        height: 65%;
+        padding-top: 20%;
+        font-size: 0.7em;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #f0efeb;
+
+    }
+
+    .left h2{
+        margin-top: 0;
+    }
+
+    .skills  {
+        margin-top: 5%;
+      
+    }
+
+    .right {
+        padding-top: 0;
+        height: 50%;
+        width: 60%;
+        margin-top: -25px;
+        padding: 20px;
+        background-color: #e4e4de;
+        border-radius: 25px;
+        margin: 30px;
+        box-shadow: 6px 4px 16px 0px rgba(0, 0, 0, 0.38);
+
+    }
+}
+
+@media only screen and (min-width:668px) and (max-width: 932px) and (orientation: landscape) {
+
+    header {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .left {
+        height: 80%;
+        font-size: 1em;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #f0efeb;
+
+    }
+
+    .left h2{
+        margin-top: 0;
+    }
+
+    .skills  {
+        margin-top: 5%;
+      
+    }
+
+    .right {
+       
+        padding-top: 0;
+        height: 65%;
+        width: 60%;
+        margin-top: -25px;
+        padding: 20px;
+        background-color: #e4e4de;
+        border-radius: 25px;
+        margin: 30px;
+        box-shadow: 6px 4px 16px 0px rgba(0, 0, 0, 0.38);
+
+    }
+}
+
+
+
+
+
+
+
+
+
 /**NEST HUB HORIZONTAL**/
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
-   .left {
-    padding-top: 0;
-   }
+    .left {
+        padding-top: 0;
+    }
 
-   .right {
-    padding-top: 0;
-   }
+    .right {
+        padding-top: 0;
+    }
 
 }
