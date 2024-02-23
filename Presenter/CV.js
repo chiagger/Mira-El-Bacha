@@ -28,15 +28,18 @@ function appendWorkExperience(column, jobTitle, employer, date, description) {
    
 }
 
+appendWorkExperience(topExperience, "1st Assistant Director", "Asphalt | ","2024", "");
+appendWorkExperience(topExperience, "1st Assistant Director", "That's All From Me | ","2024", "");
 appendWorkExperience(topExperience, "1st Assistant Director", "War of the Mind | ","2024", "");
 appendWorkExperience(topExperience, "1st Assistant Director", "PVC Real Estate | ","2024", "");
-appendWorkExperience(topExperience, "1st Assistant Director", "You Won't Help Me | ","2023 - 2024", "");
 appendWorkExperience(topExperience, "1st Assistant Director", "The Barn | ","2024", "");
 appendWorkExperience(topExperience, "1st Assistant Director", "In Two Minds | ","2024", "");
+appendWorkExperience(topExperience, "1st Assistant Director", "You Won't Help Me | ","2023 - 2024", "");
 appendWorkExperience(topExperience, "1st Assistant Director", "Datura Daydream | ","2022", "");
-appendWorkExperience(topExperience,"1st Assistant Director", "The Morning After | ","2022", "");
-appendWorkExperience(topExperience,"1st Assistant Director", "Rise Like Water | ","2021", "");
-appendWorkExperience(topExperience,"1st Assistant Director", "Fragile | ","2021", "");
+appendWorkExperience(topExperience, "1st Assistant Director", "The Morning After | ","2022", "");
+appendWorkExperience(topExperience, "1st Assistant Director", "Rise Like Water | ","2021", "");
+appendWorkExperience(topExperience, "1st Assistant Director", "Fragile | ","2021", "");
+
 
 //appendWorkExperience(column1, "____________________________________________","","","");
 
