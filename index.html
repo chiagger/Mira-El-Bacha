@@ -1,166 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mira El Bacha - Portfolio</title>
-    <link rel="stylesheet" href="./View/CSS/landingpage.css">
+    <link rel="stylesheet" href="./View/CSS/landingpage.css" />
     <script src="./Presenter/landingpage.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="everything">
-        <header>
-           
-            <div class="title">
-                <h1>Mira El Bacha</h1>
-                <p>1st Assistant Director</p>
+      <header>
+        <div class="title">
+          <h1>Mira El Bacha</h1>
+          <p>1st Assistant Director</p>
+        </div>
+        <div class="dropdownicon">
+          <img id="dropdown-icon" src="./View/img/dropdown-icon.png" />
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="portfolio">
+          <h2>Portfolio</h2>
+          <div class="grid-item">
+            <div class="slideshow">
+              <img src="./View/img/PVC1.jpg" alt="Image 7" class="active" />
+              <img src="./View/img/PVC2.jpg" alt="Image 8" />
+              <img src="./View/img/PVC3.jpg" alt="Image 8" />
+              <img src="./View/img/PVC4.jpg" alt="Image 8" />
+              <!-- Add more images as needed -->
             </div>
-            <div class="dropdownicon">
-                <img id="dropdown-icon" src="./View/img/dropdown-icon.png">
+            <button class="prev-btn">&lt;</button>
+            <button class="next-btn">&gt;</button>
+          </div>
+          <div class="grid">
+            <div class="grid-item">
+              <div class="slideshow">
+                <button class="prev-btn">&lt;</button>
+                <img src="./View/img/jonah1.jpg" alt="Image 1" class="active" />
+                <img src="./View/img/jonah2.jpg" alt="Image 2" />
+                <button class="next-btn">&gt;</button>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="slideshow">
+                <img src="./View/img/3.jpg" alt="Image 3" class="active" />
+                <img src="./View/img/4.jpg" alt="Image 4" />
+                <!-- Add more images as needed -->
+              </div>
+              <button class="prev-btn">&lt;</button>
+              <button class="next-btn">&gt;</button>
+            </div>
+            <div class="grid-item">
+              <div class="slideshow">
+                <img src="./View/img/5.jpg" alt="Image 5" class="active" />
+                <img src="./View/img/6.jpg" alt="Image 6" />
+                <!-- Add more images as needed -->
+              </div>
+              <button class="prev-btn">&lt;</button>
+              <button class="next-btn">&gt;</button>
+            </div>
+            <div class="grid-item">
+              <div class="slideshow">
+                <img src="./View/img/7.jpg" alt="Image 7" class="active" />
+                <img src="./View/img/8.jpg" alt="Image 8" />
+                <!-- Add more images as needed -->
+              </div>
+              <button class="prev-btn">&lt;</button>
+              <button class="next-btn">&gt;</button>
             </div>
 
-        </header>
-
-        <div class="container">
-           
-            <div class="portfolio">
-                <h2>Portfolio</h2>
-                <div class="grid">
-                    <div class="grid-item">
-                        <div class="slideshow">
-                            <button class="prev-btn">&lt;</button>
-                            <img src="./View/img/jonah1.jpg" alt="Image 1" class="active">
-                            <img src="./View/img/jonah2.jpg" alt="Image 2">
-                            <button class="next-btn">&gt;</button>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="slideshow">
-                            <img src="./View/img/3.jpg" alt="Image 3" class="active">
-                            <img src="./View/img/4.jpg" alt="Image 4">
-                            <!-- Add more images as needed -->
-                        </div>
-                        <button class="prev-btn">&lt;</button>
-                        <button class="next-btn">&gt;</button>
-                    </div>
-                    <div class="grid-item">
-                        <div class="slideshow">
-                            <img src="./View/img/5.jpg" alt="Image 5" class="active">
-                            <img src="./View/img/6.jpg" alt="Image 6">
-                            <!-- Add more images as needed -->
-                        </div>
-                        <button class="prev-btn">&lt;</button>
-                        <button class="next-btn">&gt;</button>
-                    </div>
-                    <div class="grid-item">
-                        <div class="slideshow">
-                            <img src="./View/img/7.jpg" alt="Image 7" class="active">
-                            <img src="./View/img/8.jpg" alt="Image 8">
-                            <!-- Add more images as needed -->
-                        </div>
-                        <button class="prev-btn">&lt;</button>
-                        <button class="next-btn">&gt;</button>
-                    </div>
-                    <div class="grid-item">
-                        <div class="slideshow">
-                            <img src="./View/img/PVC1.jpg" alt="Image 7" class="active">
-                            <img src="./View/img/PVC2.jpg" alt="Image 8">
-                            <img src="./View/img/PVC3.jpg" alt="Image 8">
-                            <img src="./View/img/PVC4.jpg" alt="Image 8">
-                            <!-- Add more images as needed -->
-                        </div>
-                        <button class="prev-btn">&lt;</button>
-                        <button class="next-btn">&gt;</button>
-                    </div>
-                    <!-- Add more grid items here
+            <!-- Add more grid items here
             <div class="grid-item">
                 <video controls>
                     <source src="video1.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>-->
-                    <!-- Add more grid items here -->
-                </div>
-            </div>
-            <div class="bio">
-                <p> Welcome! I am a 1st AD based in East London. I have worked as an AD across continents, collaborating
-                    with brands in Italy, the UAE, Germany, the Netherlands, and the UK.
-                </p>
-                <p>
-                    You can find a full list of my brand collaborations and AD work below: they range from the
-                    Roundhouse in London, to the Cineteca di Bologna in Italy, to the Abu Dhabi Media Company in the
-                    UAE.
-
-                </p>
-                <p>
-                    <i>I am currently open to new work.</i>
-                </p>
-                
-                <p>
-                    <b>Organised.</b> I keep everything on track while making sure creativity has the space it needs to thrive.
-                    I have managed schedules for teams of over 50 people without a hitch. Every film I have AD-ed has
-                    wrapped up early, and with satisfied creative teams.
-                </p>
-                <p>
-                    <b>Inclusive.</b> I have been an LGBT activist since I was fifteen, as an Arab lesbian myself. I have
-                    worked in anti-racist advocacy, and I am trained in disability inclusion. My work is about listening
-                    to the needs of everyone on set and making sure every crew member is valued and motivated.
-                </p>
-                <p>
-                    <b>Passionate.</b> I love being part of this industry. I have taught film, studied film, and made films
-                    over the last eight years. Films are the most powerful tool for inspiring and connecting people: my
-                    commitment to this field is unwavering.
-                </p>
-            </div>
-            
+            <!-- Add more grid items here -->
+          </div>
         </div>
-        <div class="logos">
-            <img src="./View/img/salaborsa.png" alt="Salaborsa">
-            <img src="./View/img/roundhouse.png" alt="Roundhouse" class="bigger">
-            <img src="./View/img/cineteca.png" alt="Cineteca">
-            <img src="./View/img/twofour.png" alt="Twofour54">
-            <img src="./View/img/youngabout.jpeg" alt="Young About" class="bigger">
-            <img src="./View/img/genderbender.jpg" alt="Gender Bender" class="bigger">
-            <img src="./View/img/younet.png" alt="You Net" class="bigger">
-            <img src="./View/img/somePreferCake.png" alt="Some Prefer Cake">
-            <img src="./View/img/UAL.png" alt="UAL">
+        <div class="bio">
+          <p>
+            Welcome! I am a 1st AD based in East London. I have worked as an AD
+            across continents, collaborating with brands in Italy, the UAE,
+            Germany, the Netherlands, and the UK.
+          </p>
+          <p>
+            You can find a full list of my brand collaborations and AD work
+            below: they range from the Roundhouse in London, to the Cineteca di
+            Bologna in Italy, to the Abu Dhabi Media Company in the UAE.
+          </p>
+          <p>
+            <i>I am currently open to new work.</i>
+          </p>
 
-
-
+          <p>
+            <b>Organised.</b> I keep everything on track while making sure
+            creativity has the space it needs to thrive. I have managed
+            schedules for teams of over 50 people without a hitch. Every film I
+            have AD-ed has wrapped up early, and with satisfied creative teams.
+          </p>
+          <p>
+            <b>Inclusive.</b> I have been an LGBT activist since I was fifteen,
+            as an Arab lesbian myself. I have worked in anti-racist advocacy,
+            and I am trained in disability inclusion. My work is about listening
+            to the needs of everyone on set and making sure every crew member is
+            valued and motivated.
+          </p>
+          <p>
+            <b>Passionate.</b> I love being part of this industry. I have taught
+            film, studied film, and made films over the last eight years. Films
+            are the most powerful tool for inspiring and connecting people: my
+            commitment to this field is unwavering.
+          </p>
         </div>
+      </div>
+      <div class="logos">
+        <img src="./View/img/salaborsa.png" alt="Salaborsa" />
+        <img src="./View/img/roundhouse.png" alt="Roundhouse" class="bigger" />
+        <img src="./View/img/cineteca.png" alt="Cineteca" />
+        <img src="./View/img/twofour.png" alt="Twofour54" />
+        <img
+          src="./View/img/youngabout.jpeg"
+          alt="Young About"
+          class="bigger"
+        />
+        <img
+          src="./View/img/genderbender.jpg"
+          alt="Gender Bender"
+          class="bigger"
+        />
+        <img src="./View/img/younet.png" alt="You Net" class="bigger" />
+        <img src="./View/img/somePreferCake.png" alt="Some Prefer Cake" />
+        <img src="./View/img/UAL.png" alt="UAL" />
+      </div>
     </div>
 
     <div class="sidebar">
-        <ul>
-            <li id="home">Home</li>
-            <li id="CV">CV</li>
-            <li id="contact">Contact</li>
-        </ul>
+      <ul>
+        <li id="home">Home</li>
+        <li id="CV">CV</li>
+        <li id="contact">Contact</li>
+      </ul>
     </div>
 
     <div class="popup" id="popup">
-        <div class="popup-content">
-            <div class="slideshow-popup">
-                <button class="prev-btn-popup">&lt;</button>
-                <img src="" alt="Popup Image" class="active-popup">
-                <button class="next-btn-popup">&gt;</button>
-            </div>
-            <div class="popup-info">
-                <h2>Title of the Film</h2>
-                <h4>Credits to other people who worked on the film</h4>
-                <p>Brief plot paragraph igeahgoeajfoea foiahefjhea oafeo heojhfa ohefaoh fao oifeah ojne</p>
-                <!-- Add more information as needed -->
-
-            </div>
-            <button class="close-btn" onclick="closePopup()">&times;</button>
-
+      <div class="popup-content">
+        <div class="slideshow-popup">
+          <button class="prev-btn-popup">&lt;</button>
+          <img src="" alt="Popup Image" class="active-popup" />
+          <button class="next-btn-popup">&gt;</button>
         </div>
+        <div class="popup-info">
+          <h2>Title of the Film</h2>
+          <h4>Credits to other people who worked on the film</h4>
+          <p>
+            Brief plot paragraph igeahgoeajfoea foiahefjhea oafeo heojhfa
+            ohefaoh fao oifeah ojne
+          </p>
+          <!-- Add more information as needed -->
+        </div>
+        <button class="close-btn" onclick="closePopup()">&times;</button>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
