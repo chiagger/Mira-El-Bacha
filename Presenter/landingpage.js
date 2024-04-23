@@ -1,23 +1,23 @@
 const titles = [
+  "PVC Real Estate",
   "Datura Daydreams",
   "Rise Like Water",
   "Morning After",
   "Fragile",
-  "PVC Real Estate",
 ];
 const credits = [
+  "directed by Holly Hunter",
   "directed by Jonah Garrett-Bannister",
   "directed by Jonah Garrett-Bannister",
   "directed by Saoirse D. Byrne",
   "directed by Laura Esteban",
-  "directed by Holly Hunter",
 ];
 const briefPlot = [
+  "A music video for the song PVC Real Estate by Shelf Lives.",
   "Sam is bored of hookup culture, and while trying to find the balance between superficial appearance and genuine attraction he discovers an escape: an ugly thorned flower where he convinces himself the man of his dreams resides.",
   "Lena comes across a group of nomads in London who help her come to terms with her troubled past by connecting her to spirit and balance. By turning her back on the establishment, she ultimately sees her connection to the natural world and learns the need to fight for it.",
   "Three queer friends make their way home from a night out. Throughout the film, they will question their own self-censorship, and the place in which it is coming from – is it out of fear, embarrassment, self-preservation, or a combination of the three? And how can we liberate ourselves from this judgment not only from others but from ourselves, and become comfortable in being unapologetically queer?",
   "A music video for the song Fragile by Noor Mandviwalla.",
-  "A music video for the song PVC Real Estate by Shelf Lives.",
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
