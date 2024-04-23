@@ -28,9 +28,7 @@ function appendWorkExperience(column, jobTitle, employer, date, description) {
    
 }
 
-appendWorkExperience(topExperience, "1st Assistant Director", "Asphalt | ","2024", "");
 appendWorkExperience(topExperience, "1st Assistant Director", "That's All From Me | ","2024", "");
-appendWorkExperience(topExperience, "1st Assistant Director", "War of the Mind | ","2024", "");
 appendWorkExperience(topExperience, "1st Assistant Director", "PVC Real Estate | ","2024", "");
 appendWorkExperience(topExperience, "1st Assistant Director", "The Barn | ","2024", "");
 appendWorkExperience(topExperience, "1st Assistant Director", "In Two Minds | ","2024", "");
