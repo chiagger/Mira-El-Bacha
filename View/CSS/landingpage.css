@@ -365,6 +365,11 @@ p {
 
 /**FOR PHONES VERTICAL**/
 @media only screen and (max-width: 800px) {
+
+    .grid {
+        height: 80vh;
+        overflow-y: scroll;
+    }
     .container {
         display: flex;
         flex-direction: column-reverse;
