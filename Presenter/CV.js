@@ -28,6 +28,14 @@ function appendWorkExperience(column, jobTitle, employer, date, description) {
 appendWorkExperience(
   topExperience,
   "1st Assistant Director",
+  "The Chopping Block | ",
+  "2024",
+  ""
+);
+
+appendWorkExperience(
+  topExperience,
+  "1st Assistant Director",
   "That's All From Me | ",
   "2024",
   ""
