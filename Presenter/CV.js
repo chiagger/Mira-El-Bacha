@@ -25,6 +25,47 @@ function appendWorkExperience(column, jobTitle, employer, date, description) {
   // Append the new workExperienceDiv to the container div
 }
 
+
+appendWorkExperience(
+  topExperience,
+  "1st Assistant Director",
+  "Paper Cranes | ",
+  "2025",
+  ""
+);
+
+appendWorkExperience(
+  topExperience,
+  "1st Assistant Director",
+  "Get Out Breathing | ",
+  "2025",
+  ""
+);
+
+appendWorkExperience(
+  topExperience,
+  "1st Assistant Director",
+  "The Surrogate | ",
+  "2024",
+  ""
+);
+
+appendWorkExperience(
+  topExperience,
+  "1st Assistant Director",
+  "Oblivion | ",
+  "2024",
+  ""
+);
+
+appendWorkExperience(
+  topExperience,
+  "1st Assistant Director",
+  "Moirai (Karma) | ",
+  "2024",
+  ""
+);
+
 appendWorkExperience(
   topExperience,
   "1st Assistant Director",
